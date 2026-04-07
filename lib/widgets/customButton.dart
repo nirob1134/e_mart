@@ -1,16 +1,15 @@
 import 'package:e_mart/consts/consts.dart';
-import 'package:e_mart/consts/strings.dart';
+import 'package:velocity_x/velocity_x.dart';
 import 'package:flutter/material.dart';
 
-Widget CustomButton({onPress, tittle}) {
+Widget CustomButton({String? tittle , onPress,}){
   return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-          backgroundColor: redColor,
-          foregroundColor: Colors.white,
-          padding: EdgeInsets.all(12)
-      ),
-      onPressed: () {
-        onPress;
-      },
-      child: tittle.text.white.fontFamily(bold).make());
+    style: ElevatedButton.styleFrom(
+      foregroundColor: Colors.white,
+      backgroundColor: redColor,
+      padding: EdgeInsets.all(12)
+    ),
+      onPressed: onPress,
+      child: tittle!.text.white.fontFamily(bold).size(18).make()
+  );
 }

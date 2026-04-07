@@ -1,6 +1,6 @@
 import 'package:e_mart/consts/consts.dart';
 import 'package:e_mart/consts/strings.dart';
-import 'package:e_mart/screens/splash/login_screen.dart';
+import 'package:e_mart/screens/auth/login_screen.dart';
 import 'package:e_mart/widgets/app_logo_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
