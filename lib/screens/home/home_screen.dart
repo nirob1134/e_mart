@@ -225,7 +225,6 @@ class HomeScreen extends StatelessWidget {
                       ),
                       20.heightBox,
 
-
                       //all Products
                       GridView.builder(
                         shrinkWrap: true,
@@ -235,32 +234,34 @@ class HomeScreen extends StatelessWidget {
                           crossAxisCount: 2,
                           mainAxisSpacing: 8,
                           crossAxisSpacing: 8,
-                          mainAxisExtent: 300
+                          mainAxisExtent: 300,
                         ),
                         itemBuilder: (context, index) {
                           return Column(
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: [
-                              Image.asset(
-                                imgP5,
-                                height: 200,
-                                width: 200,
-                                fit: BoxFit.cover,
-                              ),
-                              Spacer(),
-                              "Laptop 4GB/64GB".text
-                                  .fontFamily(semibold)
-                                  .color(darkFontGrey)
-                                  .make(),
-                              5.heightBox,
-                              "\$120".text
-                                  .color(redColor)
-                                  .fontFamily(bold)
-                                  .make(),
-                            ],
-                          ).box.white.margin(const EdgeInsets.all(5))
-                              .padding(const EdgeInsets.all(8)).rounded.make();
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Image.asset(
+                                    imgP5,
+                                    height: 200,
+                                    width: 200,
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Spacer(),
+                                  "Laptop 4GB/64GB".text
+                                      .fontFamily(semibold)
+                                      .color(darkFontGrey)
+                                      .make(),
+                                  5.heightBox,
+                                  "\$120".text
+                                      .color(redColor)
+                                      .fontFamily(bold)
+                                      .make(),
+                                ],
+                              ).box.white
+                              .margin(const EdgeInsets.all(5))
+                              .padding(const EdgeInsets.all(8))
+                              .rounded
+                              .make();
                         },
                       ),
                     ],

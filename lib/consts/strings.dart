@@ -17,4 +17,4 @@ const privacyPolicy = "Privacy Policy";
 const terms = "Terms And Conditions.";
 const alreadyHaveAccount = "Already Have An Account ?";
 
-//Home
+//Categor
